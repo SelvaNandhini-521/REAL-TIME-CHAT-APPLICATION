@@ -5,7 +5,7 @@ function App() {
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
   const socket = useRef(null);
-  const hasPrompted = useRef(false); // Prevent double prompt
+  const hasPrompted = useRef(false); 
 
   useEffect(() => {
     // Ask for username only once
