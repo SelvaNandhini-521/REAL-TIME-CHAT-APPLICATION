@@ -8,23 +8,19 @@ function App() {
   const hasPrompted = useRef(false); 
 
   useEffect(() => {
-    // Ask for username only once
     if (!hasPrompted.current) {
       const name = prompt("Enter your name:");
       setUsername(name || "Anonymous");
       hasPrompted.current = true;
     }
-
-    // Connect to WebSocket server
+    
     socket.current = new WebSocket("ws://localhost:3000");
 
-    // Receive message
     socket.current.onmessage = (event) => {
       const data = JSON.parse(event.data);
       setMessages((prev) => [...prev, data]);
     };
 
-    // Cleanup
     return () => socket.current.close();
   }, []);
 
