@@ -1,15 +1,3 @@
-COMPANY: CODTECH IT SOLUTIONS
-
-NAME: SELVA NANDHINI S
-
-INTERN ID: CT04DG3334
-
-DOMAIN: FRONT END DEVELOPMENT
-
-DURATION: 4 WEEKS
-
-MENTOR: NEELA SANTOSH
-
 DESCRIPTION OF THE TASK:
 
 This project is a real-time chat application built using React.js for the front end and WebSockets for real-time communication. The main objective was to create a responsive, browser-based chat interface where users can send and receive messages instantly, reflecting the growing importance of real-time communication in modern web applications.
